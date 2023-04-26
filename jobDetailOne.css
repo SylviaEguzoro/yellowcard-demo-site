@@ -1,0 +1,987 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --ff-main: 'Lato', sans-serif;
+
+    --body-clr: #e0e0e034;
+    --body-clr-light: #e0e0e00c;
+    --body-clr-light-light: rgba(128, 128, 128, 0.103);
+    --main-clr: #a16fb8;
+    --dark-purple-clr: #44195B;
+    --white-clr: white;
+    --hr-clr-dark: rgba(128, 128, 128, 0.575);
+    --hr-clr-light: rgba(128, 128, 128, 0.315);
+    --ff-clr-one: #44195B;
+    --ff-clr-two: #222222;
+    --ff-clr-three: #686868;
+}
+
+html,
+body {
+    background-color: var(--body-clr);
+    font-family: var(--ff-main);
+}
+
+/*Styling for mobile*/
+
+nav {
+    padding-top: 25px;
+    padding-bottom: 25px;  
+}
+
+.navMainDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navMainDiv-Div {
+    display: none;
+}
+
+nav img {
+    height: 19px;
+}
+
+.articleOne-homePageLink,
+.mainSectionTwo {
+    display: none;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mainDivHr {
+    background-color: var(--main-clr);
+    height: 2px;
+}
+
+.mainSectionOne {
+    background-color: var(--white-clr);
+    padding-top: 18px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1px;
+}
+
+.extraArticle,
+.extraExtraArticle {
+    display: none;
+}
+
+.articleOne-jobTitle {
+    color: var(--ff-clr-one);
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+
+.articleOne-divOne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 144px;
+    margin-bottom: 12px;
+}
+
+.articleOne-divOne i {
+    font-size: 3px;
+    color: var(--ff-clr-three);
+}
+
+.articleOne-divOne p {
+    color: var(--ff-clr-three);
+    font-size: 15px;
+}
+
+.articleOne-applyButton button {
+    color: var(--white-clr);
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--dark-purple-clr);
+    border: none;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 2px;
+    margin-bottom: 17px;
+    transition: background-color 1s, color 1s;
+}
+
+.articleOne-applyButton button:hover {
+    background-color: var(--hr-clr-light);
+    color: var(--dark-purple-clr);
+}
+
+.articleOne-jobDetail {
+    color: var(--ff-clr-three);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.articleOne-jobDetail span {
+    color: var(--ff-clr-two);
+}
+
+.hrOne {
+    border: 1px solid var(--hr-clr-light);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 14px;
+    margin-top: 18px;
+}
+
+.articleOne-jobType, 
+.articleTwo-jobRequirement {
+    color: var(--ff-clr-two);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.articleOne-jobType {
+    margin-bottom: 25px;
+}
+
+.articleTwo-jobRequirement {
+    margin-bottom: 2px;
+}
+
+.articleOne-jobDescription,
+.articleTwo-jobList,
+.articleTwo-jobListTwo,
+.articleTwo-jobListThree {
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--ff-clr-two);
+    margin-bottom: 16px;
+    width: 257px;
+}
+
+.articleTwo-jobList li,
+.articleTwo-jobListTwo li,
+.articleTwo-jobListThree li {
+    width: 230px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    margin-left: 30px;
+}
+
+.articleTwo-jobListTwo li {
+    width: 227px;
+}
+
+.articleTwo-jobList li span {
+    font-weight: 700;
+}
+
+.articleThree p {
+    font-size: 15px;
+    margin-bottom: 18px;
+    line-height: 20px;
+    color: var(--ff-clr-two);
+    font-weight: 700;
+}
+
+.articleThree-applyButton button {
+    color: var(--white-clr);
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--dark-purple-clr);
+    border: none;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 2px;
+    margin-bottom: 17px;
+    transition: background-color 1s, color 1s;
+}
+
+.articleThree-applyButton button:hover {
+    background-color: var(--hr-clr-light);
+    color: var(--dark-purple-clr);
+}
+
+footer {
+    background-color: var(--white-clr);
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+
+.footerImageDiv {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    height: 45px;
+}
+
+.footerImageDiv img {
+    width: 175px;
+    margin-top: 3px;
+}
+
+.mainDiv-subDivThree,
+.mainDiv-subDivTwo,
+.footerSpanTwo {
+    display: none;
+}
+
+.footerSpanOne {
+    font-size: 2px;
+    color: var(--ff-clr-three);
+}
+
+.mainDiv-subDivOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 67px;
+    margin-right: 67px;
+    margin-bottom: 3px;
+}
+
+.footer-aOne,
+.footer-aTwo,
+.footerMainDiv-divTwo p {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--ff-clr-three);
+}
+
+.footerMainDiv-divTwo p {
+    text-align: center;
+    letter-spacing: .6px;
+}
+
+.footer-aOne,
+.footer-aTwo {
+    transition: text-decoration 1s;
+}
+
+.footer-aOne:hover,
+.footer-aTwo:hover {
+    text-decoration: underline;
+}
+
+@media  screen and (min-width: 375px) {
+    .articleOne-divOne {
+        margin-bottom: 15px;
+    }
+
+    .articleOne-jobDescription {
+        width: 100%;
+    }
+
+    .articleTwo-jobList li,
+    .articleTwo-jobListTwo li {
+        width: 280px;
+    }
+
+    .articleTwo-jobListThree li {
+        width: 285px;
+    }
+
+    .mainDiv-subDivOne {
+        margin-left: 0;
+        margin-right: 0;
+        width: 190px;
+    }
+
+    .footerMainDiv-divOne {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #footerImageDiv img {
+        width: 185px;
+        margin-top: 2px;
+    }
+}
+
+@media  screen and (min-width: 425px) {
+    .articleTwo-jobList li,
+    .articleTwo-jobListTwo li {
+        width: 320px;
+    }
+
+    .articleTwo-jobListThree li {
+        width: 330px;
+    }
+
+    footer {
+        margin-top: 75px;
+        padding-bottom: 20px;
+    }
+    
+    .footerImageDiv img {
+        width: 180px;
+    }
+}
+
+/*styling for tablet*/
+
+@media  screen and (min-width: 768px) {
+    nav img {
+        height: 19px;
+    }
+
+    .navMainDiv {
+        justify-content: flex-start;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    nav {
+        padding-top: 30px;
+        padding-bottom: 20px;  
+    }
+
+    .mainSectionOne {
+        padding-top: 12px;
+        padding-bottom: 35px;
+    }
+
+    .articleOne {
+        display: none;
+    }
+
+    .extraArticle {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .extraArticle-homePageLink {
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: var(--ff-clr-three);
+        font-size: 15px;
+    }
+    
+    .extraArticle-homePageLink span i {
+        padding-right: 2px;
+        font-size: 10px;
+    }
+
+    .extraArticle-jobDetailDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .extraArticle-jobTitle {
+        color: var(--ff-clr-one);
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 5px;
+        line-height: 35px;
+        width: 400px;
+    }
+
+    .extraArticle-applyButton button {
+        color: var(--white-clr);
+        font-size: 18px;
+        font-weight: 700;
+        background-color: var(--dark-purple-clr);
+        border: none;
+        width: 200px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 2px;
+        transition: background-color 1s, color 1s;    
+    }
+
+    .extraArticle-applyButton button:hover {
+        background-color: var(--hr-clr-light);
+        color: var(--dark-purple-clr);
+    }
+
+    .extraArticle-jobTypeDiv {
+        color: var(--ff-clr-three);
+        font-size: 17px;
+        margin-bottom: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+    }
+
+    .extraArticle-jobTypeDiv i {
+        font-size: 3px;
+    }
+    
+    .extraArticle-extraDetailDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+    }
+
+    .extraArticle-jobDetail {
+        color: var(--ff-clr-three);
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .extraArticle-jobDetailTwo {
+        color: var(--ff-clr-two);
+        font-size: 14px;
+    }
+
+    .hrExtra {
+        border: 1px solid var(--hr-clr-light);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        margin-bottom: 23px;
+        margin-top: 20px;
+    }
+
+    .extraArticle-companyAbout {
+        color: var(--ff-clr-two);
+        font-size: 15px;
+        line-height: 22px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 25px;
+    }
+
+    .extraArticle-jobType {
+        color: var(--ff-clr-two);
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        margin-left: 15px;
+    }
+
+    .articleTwo-jobRequirement {
+        padding-left: 45px;
+    }
+    
+    .articleTwo-jobList li,
+    .articleTwo-jobListTwo li,
+    .articleTwo-jobListThree li {
+        width: 580px;
+        margin-left: 75px;
+    }
+
+    .articleThree p {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .articleThree-pOne {
+        margin-top: 30px;
+    }
+
+    .articleThree-pTwo {
+        margin-top: 20px;
+    }
+    
+    .articleThree-applyButton button {
+        width: 500px;
+        transition: background-color 1s, color 1s;
+    }
+
+    .articleThree-applyButton button:hover {
+        background-color: var(--hr-clr-light);
+        color: var(--dark-purple-clr);
+    }
+
+    .articleThreeDiv {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footerImageDiv,
+    .footerMainDiv-divTwo {
+        display: none;
+    }
+
+    .mainDiv-subDivThree,
+    .mainDiv-subDivTwo {
+        display: flex;
+    }
+
+    .mainDiv-subDivTwo p {
+        font-size: 13px;
+        color: var(--ff-clr-three);
+        letter-spacing: .6px;
+    }
+
+    .mainDiv-subDivThree img {
+        width: 175px;
+    }
+
+    .footerMainDiv-divOne {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 35px;
+        padding-top: 12px;
+    }
+
+    .mainDiv-subDivOne span {
+        display: flex;
+        font-size: 2px;
+        color: var(--ff-clr-three);
+    }
+
+    .mainDiv-subDivTwo {
+        margin-top: -2px;
+    }
+
+    .footer-aOne,
+    .footer-aTwo,
+    .mainDiv-subDivTwo p {
+        font-size: 14px;
+    }
+
+    .mainDiv-subDivOne {
+        width: 210px;
+    } 
+    
+    .mainDiv-subDivTwo {
+        margin-left: 9px;
+        width: 350px;
+    }
+}
+
+/*styling for small laptop*/
+
+@media  screen and (min-width: 1024px) {
+    nav {
+        padding-top: 40px;
+        padding-bottom: 35px;  
+    }
+    
+    nav img {
+        height: 18px;
+    }
+    
+    .navMainDiv {
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .navMainDiv-Div {
+        margin-bottom: -50px;
+    }
+    
+    .navMainDiv-Div a {
+        color: var(--hr-clr-dark);
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .navMainDiv-Div a:hover {
+        text-decoration: underline;
+    }
+    
+    .navMainDiv-Div a span i {
+        margin-right: 8px;
+        font-size: 10px;
+    }
+
+    #mainSection {
+        display: none;
+    }
+
+    main {
+        height: 100%;
+        background-color: var(--body-clr-light);
+    }
+    
+    .navMainDiv-Div,
+    .extraExtraArticle {
+        display: flex;
+    }
+
+    .extraExtraArticle-mainDiv {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .extraExtraArticle-divOne {
+        background-color: var(--white-clr);
+        border-radius: 2px;
+        width: 100%;
+    }
+
+    .extraExtraArticle-divOne-articleOne {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 12px;
+    }
+
+    .extraExtraArticle-homePageLink {
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: var(--ff-clr-three);
+        font-size: 14px;
+    }
+
+    .extraExtraArticle-homePageLink span i {
+        padding-right: 2px;
+        font-size: 10px;
+    }
+
+    .extraExtraArticle-jobTitle {
+        font-weight: 700;
+        font-size: 27px;
+        color: var(--ff-clr-one);
+        line-height: 35px;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+
+    .extraExtraArticle-jobTypeDiv {
+        color: var(--ff-clr-three);
+        font-size: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+    }
+
+    .extraExtraArticle-jobTypeDiv i {
+        font-size: 3px;
+    }
+
+    .extraExtraArticle-divOne-hrOne {
+        border: 1px solid var(--hr-clr-light);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        margin-bottom: 23px;
+        margin-top: 18px;
+    }
+
+    .extraExtraArticle-companyAbout {
+        color: var(--ff-clr-two);
+        font-size: 15px;
+        line-height: 22px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        width: 520px;
+    }
+
+    .extraExtraArticle-jobType {
+        color: var(--ff-clr-two);
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    
+    .extraExtraArticle-jobRequirement {
+        padding-left: 65px;
+        color: var(--ff-clr-two);
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+
+    .extraExtraArticle-jobList,
+    .extraExtraArticle-jobListTwo,
+    .extraExtraArticle-jobListThree {
+        margin-left: 95px;
+        margin-right: 55px;
+        font-size: 15px;
+        line-height: 22px;
+        color: var(--ff-clr-two);
+        margin-bottom: 16px;
+    }
+
+    .extraExtraArticle-jobList li,
+    .extraExtraArticle-jobListTwo li,
+    .extraExtraArticle-jobListThree li {
+        line-height: 20px;
+        margin-bottom: 7px;
+    }
+
+    .extraExtraArticle-jobList li span {
+        font-weight: 700;
+    }
+
+    .extraExtraArticle-divOne-articleThree {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    .extraExtraArticle-pOne {
+        margin-top: 30px;
+    }
+
+    .extraExtraArticle-pTwo {
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+
+    .extraExtraArticle-divOne-articleThree {
+        font-size: 15px;
+        margin-bottom: 18px;
+        line-height: 20px;
+        color: var(--ff-clr-two);
+        font-weight: 700;
+    }
+
+    .extraExtraArticle-divOne-hrTwo {
+        background-color: var(--main-clr);
+        height: 2px;
+    }
+
+    .extraExtraArticle-mainDiv {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .extraExtraArticle-applyButtonDiv a,
+    .extraExtraArticle-divTwo-pOne,
+    .extraExtraArticle-divTwoSocials {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .extraExtraArticle-divTwo-hr,
+    .extraExtraArticle-divTwo-pTwo {
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
+    .extraExtraArticle-applyButtonDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .extraExtraArticle-applyButton button {
+        color: var(--white-clr);
+        font-size: 18px;
+        font-weight: 700;
+        background-color: var(--dark-purple-clr);
+        border: none;
+        width: 270px;
+        margin-top: 32px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border-radius: 2px;
+        transition: background-color 1s, color 1s;
+    }
+
+    .extraExtraArticle-applyButton button:hover {
+        background-color: var(--hr-clr-light);
+        color: var(--dark-purple-clr);
+    }
+
+    .extraExtraArticle-divTwo {
+        width: 100%;
+    }
+
+    .extraExtraArticle-divTwo-articleOne {
+        background-color: var(--white-clr);
+        border-radius: 2px;
+        position: sticky;
+        top: 20px; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .extraExtraArticle-divTwo-hr {
+        border: 1px solid var(--hr-clr-light);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .extraExtraArticle-divTwo-pOne {
+        font-size: 15px;
+        color: var(--ff-clr-three);
+    }
+    
+    .extraExtraArticle-divTwo-pTwo {
+        font-size: 13px;
+        color: var(--ff-clr-two);
+        border: 1px solid var(--hr-clr-light);
+        border-radius: 2px;
+        padding: 5px 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .extraExtraArticle-divTwoSocials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 140px;
+        padding-bottom: 30px;
+    }
+    
+    .extraExtraArticle-divTwoSocials a i {
+        font-size: 16px;
+        color: var(--ff-clr-three);
+        padding: 7px 11px;
+        background-color: var(--white-clr);
+        border: 1px solid var(--ff-clr-three);
+        border-radius: 2px;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .extraExtraArticle-divTwoSocials a i:hover {
+        background-color: var(--ff-clr-three);
+        color: var(--white-clr)
+    }
+
+    .extraExtraArticle-divTwo-articleTwo {
+        background-color: var(--body-clr-light-light); 
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .extraExtraArticle-divTwo-articleTwo div {
+        padding-left: 18px;
+    }
+
+    .extraExtraArticle-divTwo-articleTwo-hr {
+        border: 1px solid var(--hr-clr-light);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        margin: 12px 14px;
+    }
+    
+    .extraExtraArticle-articleTwo-pOne,
+    .extraExtraArticle-articleTwo-pTwo {
+        font-size: 15px;
+        color: var(--ff-clr-three);
+    }
+    
+    .extraExtraArticle-articleTwo-pTwo {
+        color: var(--ff-clr-two);
+        margin-top: 2px;
+    }
+
+    .mainDiv-subDivThree img {
+        width: 180px;
+    }
+
+    .mainDiv-subDivOne {
+        width: 205px;
+    }
+
+    .mainDiv-subDivTwo {
+        margin-right: 245px;
+        margin-left: 2px;
+    }
+
+    .mainDiv-subDivTwo p {
+        letter-spacing: 0;
+    }
+}
+
+/*styling for big laptop*/
+
+@media  screen and (min-width: 1326px) {
+    nav {
+        padding-top: 45px;
+        padding-bottom: 40px;  
+    }
+
+    .navMainDiv {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .navMainDiv-Div {
+        margin-bottom: -65px;
+        margin-right: 15px;
+    }
+    
+    .extraExtraArticle-mainDiv {
+        margin-left: 70px;
+        margin-right: 70px;
+        gap: 35px;
+    }
+
+    .extraExtraArticle-divOne {
+        width: 210%;
+    }
+
+    .extraExtraArticle-companyAbout {
+        width: 650px;
+    }
+
+    .extraExtraArticle-applyButtonDiv a,
+    .extraExtraArticle-divTwo-pOne,
+    .extraExtraArticle-divTwoSocials {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .extraExtraArticle-divTwo-articleTwo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .extraExtraArticle-divTwo-hr,
+    .extraExtraArticle-divTwo-pTwo {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .extraExtraArticle-applyButton button {
+        width: 290px;
+    }
+
+    .extraExtraArticle-divTwoSocials {
+        width: 190px;
+    }
+
+    .extraExtraArticle-divTwo-pTwo {
+        margin-bottom: 12px;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .mainDiv-subDivOne {
+        width: 215px;
+    }
+
+    .mainDiv-subDivTwo {
+        margin-right: 555px;
+        margin-left: 6px;
+    }
+}
+
+

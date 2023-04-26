@@ -1,0 +1,933 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --ff-main: 'Lato', sans-serif;
+
+    --body-clr: #e0e0e034;
+    --body-clr-light: #e0e0e00c;
+    --body-clr-light-light: rgba(128, 128, 128, 0.103);
+    --main-clr: #a16fb8;
+    --dark-purple-clr: #44195B;
+    --white-clr: white;
+    --black-clr: rgba(0, 0, 0, 0.904);
+    --hr-clr-dark: rgba(128, 128, 128, 0.575);
+    --hr-clr-light: rgba(128, 128, 128, 0.315);
+    --ff-clr-one: #44195B;
+    --ff-clr-two: #222222;
+    --ff-clr-three: #686868;
+}
+
+html,
+body {
+    background-color: var(--body-clr);
+    font-family: var(--ff-main);
+}
+
+/*Styling for mobile*/
+
+body {
+    height: 1600px;
+}
+
+nav {
+    padding-top: 28px;
+    padding-bottom: 22px;  
+}
+
+.navMainDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navMainDiv-Div {
+    display: none;
+}
+
+nav img {
+    height: 18px;
+}
+
+.subArticleOne-homePageLink {
+    display: none;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mainDivHr {
+    background-color: var(--main-clr);
+    height: 2px;
+}
+
+.extraExtraDiv,
+.extraExtraExtraDiv {
+    display: none;
+}
+
+.mainSection {
+    background-color: var(--white-clr);
+    padding-top: 18px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1px;
+}
+
+.subArticleOne-jobTitle {
+    color: var(--ff-clr-one);
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+
+.subArticleOne-jobTypeDiv {
+    color: var(--ff-clr-three);
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 142px;
+}
+
+.subArticleOne-jobTypeDiv i {
+    font-size: 2px;
+}
+
+.extraDiv-applyButton {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--ff-clr-one);
+    border: 1px solid var(--ff-clr-one);
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 1px 1px var(--ff-clr-one);
+    transition: background-color 1s, color 1s;
+}
+
+.extraDiv-applyButton:hover {
+    background-color: var(--ff-clr-one);
+    color: var(--white-clr);
+}
+
+.extraDiv-applyButtonDiv span i {
+    font-size: 11px;
+    margin-right: 3px;
+}
+
+.extraDiv-applyButtonDiv {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.extraDiv-pDiv p {
+    color: var(--ff-clr-three);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.extraDiv-pDiv p span {
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+.subArticleOne-hrOne {
+    border: 1px solid var(--hr-clr-light);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 13px;
+    margin-top: 17px;
+}
+
+.subArticleOne-callToAction {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--ff-clr-one);
+    margin-bottom: 18px;
+    margin-left: 9px;
+}
+
+.formTwo {
+    display: none;
+}
+
+form {
+    margin-left: 9px;
+    margin-right: 9px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form label {
+    color: var(--ff-clr-three);
+    font-size: 15px;   
+}
+
+form span {
+    font-size: 7px;
+    position: absolute;
+}
+
+form input {
+    border: 1px solid var(--hr-clr-light);
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    margin-top: 3px;
+    margin-bottom: 13px;
+}
+
+.formHROne,
+.formHRTwo {
+    border: 1px solid var(--hr-clr-light);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 20px;
+    margin-bottom: 17px;
+}
+
+.formHROne {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.formDivOne {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.formDivOne select {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: var(--ff-main);
+    font-size: 14px;
+    color: var(--hr-clr-dark);
+    border-color: var(--hr-clr-dark);
+    border-radius: 2px;
+}
+
+.formDivTwo input {
+    border: none;
+    margin-top: -5px;
+}
+
+.formDivThree div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.formDivThree div i {
+    color: var(--ff-clr-three);
+    font-size: 14px;
+    background-color: var(--hr-clr-light);
+    padding: 8.2px;
+    margin-top: -10.3px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 1px solid var(--hr-clr-light);
+}
+
+.formDivFour {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black-clr);
+    padding: 30px;
+    display: grid;
+}
+
+.formDivFour input {
+    color: var(--ff-clr-one);
+    font-weight: 700;
+    font-size: 20px;
+    background-color: var(--white-clr);
+    border: none;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    font-family: var(--ff-main);
+    transition: color 1s, background-color 1s;
+}
+
+.formDivFour input:hover {
+    background-color: var(--ff-clr-one);
+    color: var(--white-clr);
+}
+
+.formDivFour div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formDivFour i {
+    color: var(--ff-clr-one);
+    position: absolute;
+    font-size: 18px;
+    left: 67px;
+    top: 45px;
+}
+
+.whiteLogo img {
+    height: 17px;
+    display: grid;
+    margin: auto;
+}
+
+.cancelBtn,
+.extraExtraExtraSection {
+    display: none;
+}
+
+@media  screen and (min-width: 375px) {
+    body {
+        height: 1570px;
+    }
+
+    .formDivFour i {
+        left: 90px;
+    }
+}
+
+@media  screen and (min-width: 425px) {
+    .formDivFour i {
+        left: 115px;
+    }
+}
+
+/*styling for tablet*/
+
+@media  screen and (min-width: 768px) {
+    body {
+        height: 1375px;
+    }
+
+    .navMainDiv {
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: flex-start;
+    }
+
+    .mainSection {
+        padding-top: 12px;
+    }
+
+    .mainArticleOne {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .subArticleOne-homePageLink {
+        display: flex;
+        text-decoration: none;
+        margin-bottom: 8px;
+        color: var(--ff-clr-three);
+        font-size: 15px;
+    }
+
+    .subArticleOne-homePageLink span i {
+        padding-right: 6px;
+        font-size: 10px;
+    }
+
+    .subArticleOne-jobTitle,
+    .extraDiv-applyButtonDiv {
+        display: none;
+    }
+
+    .extraExtraDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .extraExtraDiv-jobTitle {
+        color: var(--ff-clr-one);
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        width: 350px;
+        margin-bottom: 7px;
+    }
+
+    .extraExtraDiv-applyButtonDiv {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .extraExtraDiv-applyButton {
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--ff-clr-one);
+        border: 1px solid var(--ff-clr-one);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        height: 45px;
+        padding: 10px;
+        box-shadow: 0px 0px 1px 1px var(--main-clr);
+        transition: background-color 1s, color 1s;
+    }
+    
+    .extraExtraDiv-applyButton:hover {
+        background-color: var(--ff-clr-one);
+        color: var(--white-clr);
+    }
+    
+    .extraExtraDiv-applyButton span i {
+        font-size: 12px;
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+
+    .subArticleOne-jobTypeDiv {
+        font-size: 17px;
+        margin-bottom: 22px;
+        width: 160px;
+    }
+
+    .extraDiv-pDiv {
+        display: none;
+    }
+
+    .extraExtraExtraDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+    }
+
+    .extraExtraExtraDiv-jobDetail {
+        color: var(--ff-clr-three);
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .extraExtraExtraDiv-jobDetailTwo {
+        color: var(--ff-clr-two);
+        font-size: 14px;
+    }
+
+    .subArticleOne-hrOne {
+        margin-bottom: 23px;
+        margin-top: 20px;
+    }
+
+    .subArticleOne-callToAction { 
+        margin-left: 17px;
+    }
+
+    .formOne {
+        display: none;
+    }
+    
+    .formTwo {
+        display: flex;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+
+    .formDivZero,
+    .countryDiv {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .formDivZero input {
+        width: 100%;
+    }
+
+    .phoneDiv input {
+        width: 27%;
+        display: block;
+    }
+
+    .emailDiv input,
+    .addressDiv input,
+    .blogDiv input,
+    .formDivThree input {
+        width: 60%;
+        display: block;
+    }
+
+    .formDivThree input {
+        width: 55%;
+    }
+
+    .formDivThree div {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .formDivOne select {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        width: 65px;
+        border-color: var(--hr-clr-dark);
+        border-radius: 2px;
+    }
+
+    .cityDiv,
+    .dateDiv input,
+    .paymentDiv input {
+        width: 30%;
+        display: block;
+    }
+
+    .dateDiv {
+        margin-top: -10px;
+    }
+
+    .formHROne {
+        margin-top: 20px;
+    }
+
+    .resumeDiv input {
+        border: none;
+        margin-top: -5px;
+    }
+
+    .cancelBtnDiv {
+        margin-left: 20px;
+    }
+
+    .cancelBtn {
+        display: flex;
+        text-decoration: none;
+        color: var(--white-clr);
+        font-weight: 700;
+        background-color: transparent;
+        border: none;
+        font-size: 15px;
+        margin-top: -10px;
+    }
+
+    .formDivFour {
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .formDivFour-mainDiv {
+        margin-left: 20px;
+    }
+
+    .formDivFour-imageDiv {
+        margin-right: 20px;
+    }
+
+    .whiteLogo img {
+        height: 18px;
+    }
+
+    .formDivFour input {
+        font-size: 18px;
+        padding-left: 40px;
+        padding-right: 18px;
+    }
+
+    .formDivFour i {
+        font-size: 16px;
+        left: 68px;
+        top: 44px;
+    }
+}
+
+/*styling for small laptop*/
+
+@media  screen and (min-width: 1024px) {
+    body {
+        height: 1290px;
+    }
+
+    .mainSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navMainDiv-Div {
+        display: flex;
+    }
+
+    nav {
+        padding-top: 40px;
+        padding-bottom: 35px;  
+    }
+    
+    nav img {
+        height: 18px;
+    }
+    
+    .navMainDiv {
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .navMainDiv-Div {
+        margin-bottom: -50px;
+    }
+    
+    .navMainDiv-Div a {
+        color: var(--hr-clr-dark);
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .navMainDiv-Div a:hover {
+        text-decoration: underline;
+    }
+    
+    .navMainDiv-Div a span i {
+        margin-right: 8px;
+        font-size: 10px;
+    }
+
+    .extraExtraExtraSection {
+        display: flex;
+    }
+
+    .mainSection {
+        display: none;
+    }
+
+    main {
+        height: 100%;
+        background-color: var(--body-clr-light);
+    }
+
+    .extraExtraExtraSection-mainDiv {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .extraExtraExtraSection-mainDivDiv {
+        background-color: var(--white-clr);
+        border-radius: 2px;
+    }
+
+    .extraExtraExtraSection-articleOne {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 12px;
+    }
+
+    .extraExtraExtraSection-homePageLink {
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: var(--ff-clr-three);
+        font-size: 14px;
+    }
+
+    .extraExtraExtraSection-homePageLink span i {
+        padding-right: 2px;
+        font-size: 10px;
+    }
+
+    .extraExtraExtraSection-jobTitle {
+        font-weight: 700;
+        font-size: 28px;
+        color: var(--ff-clr-one);
+        line-height: 35px;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+
+    .extraExtraExtraSection-jobTypeDiv {
+        color: var(--ff-clr-three);
+        font-size: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+    }
+
+    .extraExtraExtraSection-jobTypeDiv i {
+        font-size: 3px;
+    }
+
+    .extraExtraExtraSection-hrOne {
+        border: 1px solid var(--hr-clr-light);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        margin-bottom: 23px;
+        margin-top: 18px;
+    }
+
+    .extraExtraExtraSection-callToAction {
+        font-weight: 700;
+        font-size: 23px;
+        color: var(--ff-clr-one);
+        margin-bottom: 18px;
+        margin-left: 17px;
+    }
+
+    .formTwo {
+        margin-left: 68px;
+        margin-right: 68px;
+    }
+
+    .phoneDiv input {
+        width: 35%;
+    }
+
+    .emailDiv input,
+    .addressDiv input,
+    .blogDiv input,
+    .formDivThree input {
+        width: 75%;
+    }
+
+    .formDivThree input {
+        width: 70%;
+    }
+
+    .formDivThree {
+        margin-bottom: 70px;
+    }
+
+    .formDivOne select {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        width: 80px;
+    }
+
+    .cityDiv,
+    .dateDiv input,
+    .paymentDiv input {
+        width: 35%;
+    }
+
+    .extraExtraExtraSection-hrTwo {
+        background-color: var(--main-clr);
+        height: 2px;
+    }
+
+    .cancelBtn {
+        font-size: 16px;
+    }
+
+    .formDivFour input {
+        font-size: 19px; 
+    }
+
+    .formDivFour {
+        z-index: 1000;
+    }
+
+    .extraExtraExtraSection-articleTwo {
+        padding-top: 30px;
+        background-color: var(--white-clr);
+        border-radius: 2px;
+        position: sticky;
+        top: 20px; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .articleTwo-hr {
+        border: 1px solid var(--hr-clr-light);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
+    .articleTwo-pOne {
+        font-size: 15px;
+        color: var(--ff-clr-three);
+        margin-left: 9px;
+    }
+    
+    .articleTwo-pTwo {
+        font-size: 13px;
+        color: var(--ff-clr-two);
+        border: 1px solid var(--hr-clr-light);
+        border-radius: 2px;
+        padding: 5px 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
+    .articleTwo-divTwoSocials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 125px;
+        padding-bottom: 30px;
+        margin-left: 9px;
+    }
+    
+    .articleTwo-divTwoSocials a i {
+        font-size: 16px;
+        color: var(--ff-clr-three);
+        padding: 7px 11px;
+        background-color: var(--white-clr);
+        border: 1px solid var(--ff-clr-three);
+        border-radius: 2px;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .articleTwo-divTwoSocials a i:hover {
+        background-color: var(--ff-clr-three);
+        color: var(--white-clr)
+    }
+
+    .extraExtraExtraSection-articleThree {
+        background-color: var(--body-clr-light-light); 
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .extraExtraExtraSection-articleThree div {
+        padding-left: 18px;
+    }
+
+    .articleThree-hr {
+        border: 1px solid var(--hr-clr-light);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        margin: 12px 14px;
+    }
+    
+    .articleThree-pOne,
+    .articleThree-pTwo {
+        font-size: 15px;
+        color: var(--ff-clr-three);
+    }
+    
+    .articleThree-pTwo {
+        color: var(--ff-clr-two);
+        margin-top: 2px;
+    }
+
+    .articleTwo-applyButtonDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    .articleTwo-applyButton button {
+        font-size: 19px;
+        font-family: var(--ff-main);
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--ff-clr-one);
+        border: 1px solid var(--ff-clr-one);
+        border-radius: 2px;
+        padding: 9px 45px;
+        background-color: var(--white-clr);
+        box-shadow: 0px 0px 1px 1px var(--main-clr);
+        transition: background-color 1s, color 1s; 
+    }
+
+    .articleTwo-applyButton button:hover {
+        background-color: var(--ff-clr-one);
+        color: var(--white-clr);
+        border: none;
+        box-shadow: none;
+    }
+
+    .articleTwo-applyButton button span i {
+        font-size: 12px;
+    }
+}
+
+/*styling for big laptop*/
+
+@media  screen and (min-width: 1326px) {
+    nav {
+        padding-top: 45px;
+        padding-bottom: 40px;  
+    }
+
+    nav img {
+        height: 18px;
+    }
+
+    .navMainDiv {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .navMainDiv-Div {
+        margin-bottom: -65px;
+        margin-right: 7px;
+    }
+
+    form input {
+        margin-right: 80px;
+    }
+
+    .cancelBtnDiv {
+        margin-left: -60px;
+    }
+    
+    .extraExtraExtraSection-mainDiv {
+        margin-left: 70px;
+        margin-right: 70px;
+        gap: 35px;
+    }
+
+    .extraExtraExtraSection-articleThree {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .articleTwo-hr,
+    .articleTwo-pOne,
+    .articleTwo-pTwo,
+    .articleTwo-divTwoSocials {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .articleTwo-divTwoSocials {
+        width: 140px;
+    }
+}

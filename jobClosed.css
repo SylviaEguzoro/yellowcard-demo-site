@@ -1,0 +1,490 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --ff-main: 'Lato', sans-serif;
+
+    --body-clr: #e0e0e034;
+    --main-clr: #a16fb8;
+    --dark-purple-clr: #44195B;
+    --white-clr: white;
+    --hr-clr-dark: rgba(128, 128, 128, 0.575);
+    --hr-clr-light: rgba(128, 128, 128, 0.315);
+    --ff-blue-clr: #0772B3;
+    --ff-clr-one: #44195B;
+    --ff-clr-two: #222222;
+    --ff-clr-three: #686868;
+}
+
+html,
+body {
+    background-color: var(--body-clr);
+    font-family: var(--ff-main);
+}
+
+/*Styling for mobile*/
+
+nav {
+    padding-top: 25px;
+    padding-bottom: 25px;  
+}
+
+.navSocialsDiv {
+    display: none;
+}
+
+.navMainDiv-logoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navMainDiv-logoDiv a img {
+    height: 18px;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mainDivHr {
+    background-color: var(--main-clr);
+    height: 2px;
+}
+
+.mainMainDiv {
+    background-color: var(--white-clr);
+    border: 2px;
+}
+
+.mainMainDiv-divOne,
+.mainMainDiv-divTwo,
+.mainMainDiv-buttonDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainMainDiv-divOne {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.mainMainDiv-divOne i {
+    font-size: 50px;
+    color: var(--hr-clr-dark);
+}
+
+.mainMainDiv-divTwo p {
+    text-align: center;
+}
+
+.mainMainDiv-divTwo-pOne,
+.mainMainDiv-divTwo-pTwo,
+.mainMainDiv-divTwo-pThree {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: var(--ff-clr-three);
+    width: 270px;
+}
+
+.mainMainDiv-divTwo-pTwo {
+    font-weight: 700;
+}
+
+.mainMainDiv-buttonDiv a button {
+    background-color: transparent;
+    border: 2px solid var(--ff-clr-one);
+    border-radius: 2px;
+    color: var(--ff-clr-one);
+    font-weight: 700;
+    padding: 7px 12px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    transition: background-color 1s, color 1s;
+}
+
+.mainMainDiv-buttonDiv a button:hover {
+    background-color: var(--ff-clr-one);
+    color: var(--white-clr);
+}
+
+footer {
+    background-color: var(--white-clr);
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+
+.footerImageDiv {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    height: 45px;
+}
+
+.footerImageDiv img {
+    width: 175px;
+    margin-top: 3px;
+}
+
+.mainDiv-subDivOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 67px;
+    margin-right: 67px;
+    margin-bottom: 3px;
+}
+
+.mainDiv-subDivTwo {
+    display: none;
+}
+
+.footer-aOne,
+.footer-aTwo,
+.footerMainDiv-divTwo p {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--ff-clr-three);
+}
+
+.footer-aOne,
+.footer-aTwo {
+    transition: text-decoration 1s;
+}
+
+.footer-aOne:hover,
+.footer-aTwo:hover {
+    text-decoration: underline;
+}
+
+.footerMainDiv-divTwo p {
+    text-align: center;
+    letter-spacing: .6px;
+}
+
+.footerSpanOne {
+    font-size: 2px;
+    color: var(--ff-clr-three);
+}
+
+.footerSpanTwo,
+.mainDiv-subDivThree {
+    display: none;
+}
+
+@media  screen and (min-width: 375px) {
+    .navMainDiv-logoDiv a img {
+        height: 19px;
+    }
+
+    .footerImageDiv {
+        height: 45px;
+    }
+
+    .mainMainDiv-divTwo-pOne,
+    .mainMainDiv-divTwo-pTwo,
+    .mainMainDiv-divTwo-pThree {
+        width: 300px;
+    }
+
+    .mainDiv-subDivOne {
+        margin-left: 92px;
+        margin-right: 92px;
+    }  
+}
+
+@media  screen and (min-width: 425px) {
+    .mainMainDiv-divTwo-pOne,
+    .mainMainDiv-divTwo-pTwo,
+    .mainMainDiv-divTwo-pThree {
+        width: 360px;
+    }
+
+    .mainDiv-subDivOne {
+        margin-left: 115px;
+        margin-right: 115px;
+    }
+
+    footer {
+        margin-top: 75px;
+        padding-bottom: 20px;
+    }
+    
+    .footerImageDiv img {
+        width: 180px;
+    }
+}
+
+/*styling for tablet*/
+
+@media  screen and (min-width: 768px) {
+    nav {
+        padding-top: 22px;
+        padding-bottom: 17px;  
+    }
+
+    .navMainDiv {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navSocialsDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 137px;
+    }
+
+    .navSocialsDiv div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navSocialsDiv div a {
+        font-size: 16px;
+        color: var(--ff-clr-three);
+        padding: 6px 12px;
+        background-color: var(--white-clr);
+        border: 1px solid var(--ff-clr-three);
+        border-radius: 2px;
+        transition: background-color 1s, color 1s;
+    }
+
+    .navSocialsDiv div a:hover {
+        background-color: var(--ff-clr-three);
+        color: var(--white-clr);
+    }
+
+    main {
+        margin-left: 10px;
+        margin-right: 10px; 
+    }
+
+    .mainMainDiv-divOne {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+    
+    .mainMainDiv-divOne i {
+        font-size: 70px;
+    }
+
+    .mainMainDiv-divTwo-pOne,
+    .mainMainDiv-divTwo-pTwo,
+    .mainMainDiv-divTwo-pThree {
+        margin-bottom: 14px;
+        font-size: 17px;
+        width: 700px;
+    }
+
+    .mainMainDiv-buttonDiv a button {
+        font-size: 13px;
+        margin-bottom: 38px;
+        padding: 7px 30px;
+        font-size: 14px;
+    }
+
+    footer {
+        margin-top: 72px;
+    }
+
+    .footerImageDiv,
+    .footerMainDiv-divTwo {
+        display: none;
+    }
+
+    .footerSpanTwo,
+    .mainDiv-subDivTwo,
+    .mainDiv-subDivThree, 
+    .footerMainDiv-divOne {
+        display: flex;
+    }
+
+    .footerMainDiv-divOne {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        margin-left: 35px;
+        margin-right: 0;
+    }
+
+    .mainDiv-subDivThree a img {
+        width: 175px;
+    }
+
+    .footerSpanTwo {
+        font-size: 2px;
+        color: var(--ff-clr-three);
+    }
+
+    .footer-aOne,
+    .footer-aTwo,
+    .mainDiv-subDivTwo p {
+        font-size: 14px;
+        color: var(--ff-clr-three);
+    }
+
+    .mainDiv-subDivOne {
+        width: 210px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    } 
+    
+    .mainDiv-subDivTwo {
+        margin-left: 7px;
+        width: 350px;
+    }
+}
+
+/*styling for small laptop*/
+
+@media  screen and (min-width: 1024px) {
+    nav {
+        padding-top: 35px;
+        padding-bottom: 25px;  
+    }
+
+    .navMainDiv-logoDiv a img {
+        height: 19px;
+    }
+
+    .navMainDiv {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .navSocialsDiv {
+        width: 145px;
+    }
+
+    .navSocialsDiv div a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    main {
+        margin-left: 25px;
+        margin-right: 25px;  
+    }
+
+    .mainMainDiv-divOne {
+        padding-top: 45px;
+        padding-bottom: 35px;
+    }
+    
+    .mainMainDiv-divOne i {
+        font-size: 100px;
+    }
+
+    .mainMainDiv-divTwo-pOne,
+    .mainMainDiv-divTwo-pTwo,
+    .mainMainDiv-divTwo-pThree {
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    .mainMainDiv-buttonDiv a button {
+        font-size: 16px;
+        margin-bottom: 80px;
+        padding: 10px 60px;
+    }
+
+    footer {
+        margin-top: 90px;
+    }
+
+    .mainDiv-subDivThree a img {
+        width: 180px;
+    }
+
+    .footerSpanTwo {
+        font-size: 2px;
+    }
+
+    .footer-aOne,
+    .footer-aTwo,
+    .mainDiv-subDivTwo p {
+        font-size: 14px;
+    }
+
+    .mainDiv-subDivOne {
+        width: 245px;
+    } 
+    
+    .mainDiv-subDivTwo {
+        margin-left: 8px;
+        margin-right: 300px;
+    }
+}
+
+/*styling for big laptop*/
+
+@media  screen and (min-width: 1326px) {
+    nav {
+        padding-top: 35px;
+        padding-bottom: 25px;  
+    }
+
+    .navMainDiv-logoDiv a img {
+        height: 19px;
+    }
+
+    .navMainDiv {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .navSocialsDiv div a {
+        font-size: 17px;
+    }
+
+    main {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .mainMainDiv-divOne {
+        padding-top: 55px;
+        padding-bottom: 45px;
+    }
+    
+    .mainMainDiv-divOne i {
+        font-size: 110px;
+    }
+
+    .mainMainDiv-buttonDiv a button {
+        padding: 10px 80px;
+    }
+
+    footer {
+        margin-top: 85px;
+    }
+
+    .footer-aOne,
+    .footer-aTwo,
+    .mainDiv-subDivTwo p {
+        font-size: 14px;
+    }
+
+    .mainDiv-subDivOne {
+        width: 255px;
+    }
+    
+    .mainDiv-subDivTwo {
+        margin-right: 610px;
+    }
+}
